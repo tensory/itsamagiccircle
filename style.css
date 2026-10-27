@@ -1,10 +1,105 @@
-/* Typography */
-body {
-    font-family: sans-serif;
+/* Magic Circle Crochet — privacy policy */
+
+:root {
+  --petrol: #144D52;
+  --petrol-60: #72959A; /* #144D52 at 60% over white */
+  --white: #FFFFFF;
+  --text: #1E2E30;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 4rem 1.5rem 6rem;
+    background: var(--white);
+    color: var(--text);
+    font-family: sans-serif;
+}
+/* Typography */
 h1, h2, h3 {
-  font-weight: 400; /* Regular */
   font-family: 'Fraunces', serif;
+  color: var(--petrol);
   font-optical-sizing: auto; /* Dynamically adjusts character shapes based on font size */
+  text-wrap: balance;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.25rem, 7vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin: 3.5rem 0 0.25rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--petrol-60);
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+/* "Last updated" line right after the Privacy Policy heading */
+h2 + p {
+  margin-top: 0;
+  font-size: 0.9375rem;
+  color: var(--teal);
+}
+
+h3 {
+  margin: 2.25rem 0 0.5rem;
+  font-size: 1.3125rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1rem;
+  text-wrap: pretty;
+}
+
+/* Intro paragraph under the app name */
+h1 + p {
+  font-size: 1.1875rem;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-color: var(--teal-30);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-color: var(--teal);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--teal-30);
+  color: var(--teal);
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 2.5rem;
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.625rem;
+  }
 }
