@@ -104,3 +104,5 @@ a:focus-visible {
     font-size: 1.625rem;
   }
 }
+
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
