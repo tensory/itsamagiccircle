@@ -3,6 +3,7 @@
 :root {
   --petrol: #144D52;
   --petrol-60: #72959A; /* #144D52 at 60% over white */
+  --petrol-20: #D0DBDC;
   --white: #FFFFFF;
   --text: #1E2E30;
 }
@@ -52,7 +53,7 @@ h2.divider {
 h2 + p {
   margin-top: 0;
   font-size: 0.9375rem;
-  color: var(--teal);
+  color: var(--petrol);
 }
 
 h3 {
@@ -72,26 +73,26 @@ h1 + p {
 }
 
 a {
-  color: var(--teal);
+  color: var(--petrol);
   text-decoration: underline;
-  text-decoration-color: var(--teal-30);
+  text-decoration-color: var(--petrol-60);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.2em;
 }
 
 a:hover {
-  text-decoration-color: var(--teal);
+  text-decoration-color: var(--petrol);
 }
 
 a:focus-visible {
-  outline: 2px solid var(--teal);
+  outline: 2px solid var(--petrol);
   outline-offset: 2px;
   border-radius: 2px;
 }
 
 ::selection {
-  background: var(--teal-30);
-  color: var(--teal);
+  background: var(--petrol-20);
+  color: var(--petrol);
 }
 
 @media (max-width: 480px) {
